@@ -1,0 +1,60 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~jsoneditor/dist/jsoneditor.min.css";
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.example-class > .jsoneditor-icon {
+    background-position: -168px -48px; /* warning triangle */
+}
+
+.editorBorderless > div > div {
+    border: none;
+}
+
+td.infobutton {
+    width: 24px;
+    height: 24px;
+}
+
+.editorbutton {
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    margin: 0;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    z-index: 1;
+}
+
+.material-icons.md-18 { 
+    font-size: 19px;
+    color: darkgray;
+    padding-top: 2px;
+    padding-left: 2px;
+}
+
+/* Tooltip container */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    opacity: 1;
+    vertical-align: middle;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+    width: 350px;
+    background-color: black;
+    color: #fff;
+    padding: 10px 10px;
+    border-radius: 6px;
+    opacity: 0.75;
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+
+/* .jsoneditor-contextmenu-root{display:none;} */

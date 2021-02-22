@@ -1,0 +1,489 @@
+{
+    "DEFAULT": {
+        "Benefits": {
+            "Choices": {
+                "HorizontalBoxPayTypeResourceKey": "GLOBAL_Per_Year_Abbreviated",
+                "HideHorizontalBoxQuestionMarksAlways": false,
+                "HideHorizontalBoxQuestionMarksWithoutValue": false,
+                "TitleResourceKey": "Coverage_Benefit_header",
+                "Hiding": {
+                    "BenefitCodesToHide": [ "Example:BenefitName_Order_of_items_is_important" ],
+                    "BenefitOptionCodesToHide": [ [ "Example:BenefitName", "Example:Option1" ] ],
+                    "BenefitCategoryCodesToHide": [ [ "Example:BenefitName", "Example:Category1" ] ],
+                    "BenefitOptionCategoryCodesToHide": [ [ "Example:BenefitName", "Example:Option1", "Example:Category1" ] ],
+                    "BenefitCodesToHideForOptionTab": {
+                        "DEFAULT": true,
+                        "Example:BenefitCodeToHide": false
+                    }
+                },
+                "OptionColumn": {
+                    "ShowCost": false,
+                    "CostValue": {
+                        "DEFAULT": "Unknown"
+                    },
+                    "CostValuePeriod": "None",
+                    "Hiding": {
+                        "BenefitCodesToHide": [],
+                        "BenefitOptionCodesToHide": [],
+                        "BenefitCategoryCodesToHide": [],
+                        "BenefitOptionCategoryCodesToHide": []
+                    },
+                    "TextWhenHiding": {
+                        "DEFAULT": "-",
+                        "DEFAULT,fr-CA": "-"
+                    },
+                    "TextWhenNothingOrZero": {
+                        "DEFAULT": "-",
+                        "DEFAULT,fr-CA": "-"
+                    },
+                    "TitleResourceKey": "Coverage_Option_header"
+                },
+                "CategoryColumn": {
+                    "ShowCost": false,
+                    "CostValue": {
+                        "DEFAULT": "Unknown"
+                    },
+                    "CostValuePeriod": "None",
+                    "Hiding": {
+                        "BenefitCodesToHide": [],
+                        "BenefitOptionCodesToHide": [],
+                        "BenefitCategoryCodesToHide": [],
+                        "BenefitOptionCategoryCodesToHide": []
+                    },
+                    "TextWhenHiding": {
+                        "DEFAULT": "-"
+                    },
+                    "TextWhenNothingOrZero": {
+                        "DEFAULT": "-"
+                    },
+                    "TitleResourceKey": "Coverage_Category_header"
+                },
+                "CostColumn": {
+                    "0": {
+                        "CostValue": {
+                            "DEFAULT": "Er,Ee"
+                        },
+                        "CostValuePeriod": "None",
+                        "Hiding": {
+                            "BenefitCodesToHide": [],
+                            "BenefitOptionCodesToHide": [],
+                            "BenefitCategoryCodesToHide": [],
+                            "BenefitOptionCategoryCodesToHide": []
+                        },
+                        "BenefitCodesToRemoveFromTotal": [],
+                        "TextWhenHiding": {
+                            "DEFAULT": "-"
+                        },
+                        "TextWhenNothingOrZero": {
+                            "DEFAULT": "-"
+                        },
+                        "TitleResourceKey": "Coverage_Cost_header"
+                    }
+                }
+            },
+            "Finalize,Confirmation,TodaysCoverage,TodaysCoveragePrint,EventDetails,EventDetailsPrint": {
+                "HideTotalsRow": false,
+                "TitleResourceKey": "Rev_Benefit_Name",
+                "Hiding": {
+                    "BenefitCodesToHide": [],
+                    "BenefitOptionCodesToHide": [],
+                    "BenefitCategoryCodesToHide": [],
+                    "BenefitOptionCategoryCodesToHide": [],
+                    "BenefitCodesToHideForOptionTab": {
+                        "DEFAULT": true,
+                        "Example:BenefitCodeToHide": false
+                    }
+                },
+                "OptionColumn": {
+                    "ShowCost": false,
+                    "CostValue": {
+                        "DEFAULT": "Unknown"
+                    },
+                    "CostValuePeriod": "None",
+                    "Hiding": {
+                        "BenefitCodesToHide": [],
+                        "BenefitOptionCodesToHide": [],
+                        "BenefitCategoryCodesToHide": [],
+                        "BenefitOptionCategoryCodesToHide": []
+                    },
+                    "TextWhenHiding": {
+                        "DEFAULT": "-"
+                    },
+                    "TextWhenNothingOrZero": {
+                        "DEFAULT": "-"
+                    },
+                    "TitleResourceKey": "Rev_Coverage_Options"
+                },
+                "CategoryColumn": {
+                    "ShowCost": false,
+                    "CostValue": {
+                        "DEFAULT": "Unknown"
+                    },
+                    "CostValuePeriod": "None",
+                    "Hiding": {
+                        "BenefitCodesToHide": [],
+                        "BenefitOptionCodesToHide": [],
+                        "BenefitCategoryCodesToHide": [],
+                        "BenefitOptionCategoryCodesToHide": []
+                    },
+                    "TextWhenHiding": {
+                        "DEFAULT": "-"
+                    },
+                    "TextWhenNothingOrZero": {
+                        "DEFAULT": "-"
+                    },
+                    "TitleResourceKey": "Rev_Coverage_Details"
+                },
+                "CostColumn": {
+                    "0": {
+                        "CostValue": {
+                            "DEFAULT": "Er,Core"
+                        },
+                        "CostValuePeriod": "None",
+                        "Hiding": {
+                            "BenefitCodesToHide": [],
+                            "BenefitOptionCodesToHide": [],
+                            "BenefitCategoryCodesToHide": [],
+                            "BenefitOptionCategoryCodesToHide": []
+                        },
+                        "BenefitCodesToRemoveFromTotal": [],
+                        "HideTotal": false,
+                        "HideTotalText": {
+                            "DEFAULT": ""
+                        },
+                        "TextWhenHiding": {
+                            "DEFAULT": "-"
+                        },
+                        "TextWhenNothingOrZero": {
+                            "DEFAULT": "-"
+                        },
+                        "TitleResourceKey": "Coverage_Employer_Cost_header"
+                    },
+                    "1": {
+                        "CostValue": {
+                            "DEFAULT": "Ee"
+                        },
+                        "CostValuePeriod": "None",
+                        "Hiding": {
+                            "BenefitCodesToHide": [],
+                            "BenefitOptionCodesToHide": [],
+                            "BenefitCategoryCodesToHide": [],
+                            "BenefitOptionCategoryCodesToHide": []
+                        },
+                        "BenefitCodesToRemoveFromTotal": [],
+                        "HideTotal": false,
+                        "HideTotalText": {
+                            "DEFAULT": ""
+                        },
+                        "TextWhenHiding": {
+                            "DEFAULT": "-"
+                        },
+                        "TextWhenNothingOrZero": {
+                            "DEFAULT": "-"
+                        },
+                        "TitleResourceKey": "Coverage_Employee_Cost_header"
+                    }
+                }
+            },
+            "TodaysCoverage,TodaysCoveragePrint,EventDetails,EventDetailsPrint": {
+                "CostColumn": {
+                    "0": {
+                        "TitleResourceKey": "Rev_Employeer_Cost"
+                    },
+                    "1": {
+                        "TitleResourceKey": "Rev_Your_Cost"
+                    }
+                }
+            }
+        },
+        "Beneficiaries": {
+            "Beneficiaries,Finalize,Confirmation,TodaysCoverage,TodaysCoveragePrint,EventDetails,EventDetailsPrint": {
+                "HideAll": false,
+                "HideContingentSection": false
+            }
+        },
+        "MyPlanCovers": {
+            "DetailPageHideSaveButton": false,
+            "DetailPageReadOnly": false,
+            "DetailPageHideSelectAllNoneLink": false,
+            "ChoicesHideNoOneCoveredLabelHorizontalBox": false,
+            "ChoicesHideNoOneCoveredLabelDropDown": false
+        },
+        "FinalizeEsignature": {
+            "IsEventBased": false,
+            "IsDivisionBased": false,
+            "HideEventStatusOnFinalizeStep": false
+        },
+        "MemberProfileFields": {
+            "Family,Finalize,TodaysCoverage": [
+                "FirstName_LastName",
+                "EmployeeNo",
+                "Salary",
+                "Gender",
+                "DateOfBirth",
+                "Address",
+                "PhoneNumber"
+            ]
+        },
+        "SimplifiedEnrollmentTool": {
+            "OptionColumn": {
+                "TextWhenHiding": {
+                    "DEFAULT": "-"
+                },
+                "TextWhenNothingOrZero": {
+                    "DEFAULT": "-"
+                }
+            },
+            "CategoryColumn": {
+                "TextWhenHiding": {
+                    "DEFAULT": "-"
+                },
+                "TextWhenNothingOrZero": {
+                    "DEFAULT": "-"
+                }
+            },
+            "ChoicesCostColumn": {
+                "0": {
+                    "CostValue": {
+                        "DEFAULT": "Core"
+                    },
+                    "CostValuePeriod": "None",
+                    "Hiding": {
+                        "BenefitCodesToHide": [],
+                        "BenefitOptionCodesToHide": [],
+                        "BenefitCategoryCodesToHide": [],
+                        "BenefitOptionCategoryCodesToHide": []
+                    },
+                    "BenefitCodesToRemoveFromTotal": [],
+                    "TextWhenHiding": {
+                        "DEFAULT": "-"
+                    },
+                    "TextWhenNothingOrZero": {
+                        "DEFAULT": "-"
+                    },
+                    "TitleResourceKey": "Coverage_Employer_Cost_header"
+                },
+                "1": {
+                    "CostValue": {
+                        "DEFAULT": "Ee"
+                    },
+                    "CostValuePeriod": "None",
+                    "Hiding": {
+                        "BenefitCodesToHide": [],
+                        "BenefitOptionCodesToHide": [],
+                        "BenefitCategoryCodesToHide": [],
+                        "BenefitOptionCategoryCodesToHide": []
+                    },
+                    "BenefitCodesToRemoveFromTotal": [],
+                    "TextWhenHiding": {
+                        "DEFAULT": "-"
+                    },
+                    "TextWhenNothingOrZero": {
+                        "DEFAULT": "-"
+                    },
+                    "TitleResourceKey": "Coverage_Employee_Cost_header"
+                }
+            }
+        },
+        "ESignatureDialogFields": [
+            "FirstName_LastName",
+            "EmployeeNo",
+            "DateOfBirth",
+            "SinNumber",
+            "Address",
+            "SpecimenPlanNumber"
+        ],
+        "BrokenRuleMessageMappings": {
+            "TokenReplaceCollection": [
+                {
+                    "Type": "WebPortal.ArielBenefits.ViewModel.Coverage.BenefitModel, WebPortal.ArielBenefits.ViewModel",
+                    "WarningCode": "LateEntrant_EOI_Dependent_Choices_Message",
+                    "PropertiesToFormat": [ "LateEntrantDependentNames" ]
+                },
+                {
+                    "Type": "WebPortal.ArielBenefits.ViewModel.Coverage.BenefitModel, WebPortal.ArielBenefits.ViewModel",
+                    "WarningCode": "EOIPENDINGREVIEW",
+                    "PropertiesToFormat": [ "EvidenceOfInsurability.RequestedVolume" ]
+                },
+                {
+                    "Type": "WebPortal.ArielBenefits.ViewModel.Coverage.BenefitModel, WebPortal.ArielBenefits.ViewModel",
+                    "WarningCode": "WP",
+                    "PropertiesToFormat": [ "WaitingPeriodEndDate" ]
+                },
+                {
+                    "Type": "WebPortal.ArielBenefits.ViewModel.Coverage.BenefitModel, WebPortal.ArielBenefits.ViewModel",
+                    "WarningCode": "WL",
+                    "PropertiesToFormat": [ "LockEndDate" ]
+                },
+                {
+                    "Type": "WebPortal.ArielBenefits.ViewModel.Coverage.BenefitModel, WebPortal.ArielBenefits.ViewModel",
+                    "WarningCode": "WL_LockEndDate",
+                    "PropertiesToFormat": [ "LockEndDate" ]
+                }
+            ],
+            "SimilarMessagesWarningCodesToRemove": [ "WP" ],
+            "IgnoredWarningCodes": []
+        },
+        "CtaPanelBeneficiariesBenefits": [],
+        "AllowedEventActionsForMember": "ViewDetails, ViewForms, Start, Restart, Resume, Cancel, Reverse",
+        "AllowedEventActionsForAdmin": "ViewDetails, ViewForms, Start, Restart, Resume, Cancel, Reverse",
+        "ChoicesCostSummaryScrollOffsetTop": 0,
+        "HideChangePhotoLink": false,
+        "ExternalOnlineEoiToolLink": "",
+        "UseResponsiveEnrollmentTool": false,
+        "DisplayExpirationCountdownForPendingEvents": true,
+        "DisplayToggleAllSectionsLink": false,
+        "DisplayDstClaimsInfo": false,
+        "CostSummary": {
+            "Choices,Finalize,Confirmation,TodaysCoverage,TodaysCoveragePrint,EventDetails,EventDetailsPrint": {
+                "HideCostSummary": false,
+                "HideRecalculateButton": false,
+                "CommonVariables": [
+                    {
+                        "CostBasisSuffix": "@ToLower($('ETCommon,Rev_Flex_CS_Totals_#CostBasisDisplayResourceKeySuffix'))"
+                    }
+                ],
+                "Sections": {
+                    "Condition": null,
+                    "0": {
+                        "Condition": null,
+                        "Type": "ChoicesStepHeader",
+                        "Description1": "$('ETCommon,Rev_CostSummary_Title')"
+                    },
+                    "1": {
+                        "Condition": null,
+                        "Type": "TableViewHeader",
+                        "Description1": "$('ETCommon,Rev_CostSummary_Title')"
+                    },
+                    "2": {
+                        "Condition": "#FlexPlan",
+                        "Type": "MiddleSection",
+                        "Description1": "$(ETCommon,CS_Flex_CS_Credits_Title)",
+                        "Lines": {
+                            "0": {
+                                "Condition": null,
+                                "Description1": "$(ETCommon,CS_Flex_CS_Credits_Group2):",
+                                "Value1": "@C2(#UnusedFlexCredits) ##CostBasisSuffix"
+                            }
+                        }
+                    },
+                    "3": {
+                        "Condition": "#FlexPlan == false",
+                        "Type": "MiddleSection",
+                        "Description1": "$(ETCommon,CS_TRAD_CS_Credits_Title)",
+                        "Lines": {
+                            "0": {
+                                "Description1": "$(ETCommon,CS_TRAD_CS_Credits_Title):",
+                                "Value1": "@C2(#TotalEmployerCost) ##CostBasisSuffix"
+                            }
+                        }
+                    },
+                    "4": {
+                        "Type": "LineBreak"
+                    },
+                    "5": {
+                        "Condition": "#FlexPlan",
+                        "Type": "MiddleSection",
+                        "Description1": "$(ETCommon,CS_Flex_CS_Costs_Title)",
+                        "Lines": {
+                            "0": {
+                                "Description1": "$(ETCommon,CS_Flex_CS_Costs_Group1):",
+                                "Value1": "@C2(#TotalMandatoryEmployeeCost) ##CostBasisSuffix"
+                            },
+                            "1": {
+                                "Description1": "$(ETCommon,CS_Flex_CS_Costs_Group2):",
+                                "Value1": "@C2(#TotalOptionalEmployeeCost) ##CostBasisSuffix"
+                            }
+                        }
+                    },
+                    "6": {
+                        "Condition": "#FlexPlan == false",
+                        "Type": "MiddleSection",
+                        "Description1": "$(ETCommon,CS_TRAD_CS_Credits_Group1)",
+                        "Lines": {
+                            "0": {
+                                "Description1": "$(ETCommon,CS_TRAD_CS_Credits_Group1):",
+                                "Value1": "@C2(#TotalMandatoryEmployeeCost+#TotalOptionalEmployeeCost) ##CostBasisSuffix"
+                            },
+                            "1": {
+                                "Description1": "$(ETCommon,CS_Flex_CS_Costs_Group2):",
+                                "Value1": "@C2(#TotalOptionalEmployeeCost) ##CostBasisSuffix"
+                            }
+                        }
+                    },
+                    "7": {
+                        "Type": "LineBreak"
+                    },
+                    "8": {
+                        "Type": "MiddleSection",
+                        "Description1": "$(ETCommon,CS_TRAD_CS_TB_Title)",
+                        "Lines": {
+                            "0": {
+                                "Description1": "$(ETCommon,CS_TRAD_CS_TB_FED):",
+                                "Value1": "@C2(#TotalFederalTaxableBenfit) ##CostBasisSuffix"
+                            },
+                            "1": {
+                                "Condition": "#IsQuebecEmployee",
+                                "Description1": "$(ETCommon,CS_TRAD_CS_TB_PROV):",
+                                "Value1": "@C2(#TotalProvincialTaxableBenefit) ##CostBasisSuffix"
+                            }
+                        }
+                    },
+                    "9": {
+                        "Type": "Spacer1"
+                    },
+                    "10": {
+                        "Type": "Footer",
+                        "Description1": "$(ETCommon,CS_Flex_CS_Totals_Title)",
+                        "Value1": "@C2(@GetCostAnnual(#TotalPayrollDeduction)) $(ETCommon,CS_Flex_CS_Totals_Year)",
+                        "Value2": "@C2(@Round(@GetCostAnnual(#TotalPayrollDeduction)/#PayFrequency,2)) $(ETCommon,CS_Flex_CS_Totals_Pay)"
+                    }
+                }
+            }
+        },
+        "BenefitWidget": {
+            "0": {
+                "Costs": {
+                    "Condition": "False",
+                    "AnnualBenefitValue": null,
+                    "AnnualTaxable": null,
+                    "BiweeklyPayableDeduction": null,
+                    "SummaryValue1": null,
+                    "SummaryValue2": null,
+                    "SummaryValue3": null,
+                    "CashValue": null,
+                    "HideNumbers": "False",
+                    "MonthlyEmployeeCost": null,
+                    "MonthlyEmployerCost": null,
+                    "MonthlyCoreCost": null
+                },
+                "Coverages": {
+                    "Condition": "True",
+                    "CoveragesHiding": {
+                        "BenefitCodesToHide": [ "Example:BenefitName_Order_of_items_is_important" ],
+                        "BenefitOptionCodesToHide": [ [ "Example:BenefitName", "Example:Option1" ] ],
+                        "BenefitCategoryCodesToHide": [ [ "Example:BenefitName", "Example:Category1" ] ],
+                        "BenefitOptionCategoryCodesToHide": [ [ "Example:BenefitName", "Example:Option1", "Example:Category1" ] ],
+                        "BenefitCodesToHideForOptionTab": {
+                            "DEFAULT": true,
+                            "Example:BenefitCodeToHide": false
+                        }
+                    },
+                    "CoveragesCount": 5
+                }
+            }
+        },
+        "MyElectionTabsHiding": {
+            "TodaysCoverage,TodaysCoveragePrint,EventDetails,EventDetailsPrint": {
+                "HideBeneficiaryTab": false,
+                "HideBenefitTab": false,
+                "HideDependentTab": false,
+                "HideEventStatusTab": false,
+                "HideFormsTab": false,
+                "HideMemberTab": false
+            }
+        },
+        "HideIrrevocability": false,
+        "ShowDetailsOnPlanWidget": false
+    }
+}

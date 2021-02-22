@@ -1,0 +1,1599 @@
+{
+    "name": "UIConfig",
+    "description":"",
+    "type":"root",
+    "values":null,
+    "default":null,
+    "actions": ["Add"],
+    "subMetadata": [
+        {
+            "name":"Demographic",
+            "description":"Some demographic",
+            "type":"Demographic",
+            "values":null,
+            "default":null,
+            "actions": [ "Remove", "Add", "Info" ],
+            "subMetadata":[
+                {
+                    "name":"Benefits",
+                    "description":"An object that controls configurations for the benefits widget",
+                    "type":"Dictionary<EnumMulti,Object>",
+                    "values":"Key=Family,Choices,Beneficiaries,Finalize,Confirmation,TodaysCoverage,TodaysCoveragePrint,EventDetails",
+                    "default":null,
+                    "actions": [ "Remove", "Add", "Info" ],
+                    "subMetadata":[
+                        {
+                            "name":"HorizontalBoxPayTypeResourceKey",
+                            "description":"HorizontalBoxPayTypeResourceKey Description",
+                            "type":"String",
+                            "values":null,
+                            "default":null,
+                            "actions": ["Remove", "Info"],
+                            "subMetadata":null
+                        },
+                        {
+                            "name":"HideHorizontalBoxQuestionMarksAlways",
+                            "description":"HideHorizontalBoxQuestionMarksAlways Description",
+                            "type":"Boolean",
+                            "values":null,
+                            "default":null,
+                            "actions": ["Remove", "Info"],
+                            "subMetadata":null
+                        },
+                        {
+                            "name":"HideHorizontalBoxQuestionMarksWithoutValue",
+                            "description":"HideHorizontalBoxQuestionMarksWithoutValue Description",
+                            "type":"Boolean",
+                            "values":null,
+                            "default":null,
+                            "actions": ["Remove", "Info"],
+                            "subMetadata":null
+                        },
+                        {
+                            "name":"HideTotalsRow",
+                            "description":"HideTotalsRow Description",
+                            "type":"Boolean",
+                            "values":null,
+                            "default":null,
+                            "actions": ["Remove", "Info"],
+                            "subMetadata":null
+                        },
+                        {
+                            "name":"TitleResourceKey",
+                            "description":"TitleResourceKey Description",
+                            "type":"String",
+                            "values":null,
+                            "default":null,
+                            "actions": ["Remove", "Info"],
+                            "subMetadata":null
+                        },
+                        {
+                            "name":"Hiding",
+                            "description":"An object that controls hiding elements",
+                            "type":"Object",
+                            "values":null,
+                            "default":null,
+                            "actions": ["Remove", "Add", "Info"],
+                            "subMetadata":[
+                                {
+                                    "name":"BenefitCodesToHide",
+                                    "description":"BenefitCodesToHide Description",
+                                    "type":"List<String>",
+                                    "values":null,
+                                    "default":null,
+                                    "actions": ["Remove", "Add", "Info"],
+                                    "subMetadata":null
+                                },
+                                {
+                                    "name":"BenefitOptionCodesToHide",
+                                    "description":"BenefitOptionCodesToHide Description",
+                                    "type":"List<List<String>>",
+                                    "values":null,
+                                    "default":null,
+                                    "actions": ["Remove", "Add", "Info"],
+                                    "subMetadata":null
+                                },  
+                                {
+                                    "name":"BenefitCategoryCodesToHide",
+                                    "description":"BenefitCategoryCodesToHide Description",
+                                    "type":"List<List<String>>",
+                                    "values":null,
+                                    "default":null,
+                                    "actions": ["Remove", "Add", "Info"],
+                                    "subMetadata":null
+                                },
+                                {
+                                    "name":"BenefitOptionCategoryCodesToHide",
+                                    "description":"BenefitOptionCategoryCodesToHide Description",
+                                    "type":"List<List<String>>",
+                                    "values":null,
+                                    "default":null,
+                                    "actions": ["Remove", "Add", "Info"],
+                                    "subMetadata":null
+                                },
+                                {
+                                    "name":"BenefitCodesToHideForOptionTab",
+                                    "description":"BenefitCodesToHideForOptionTab Description",
+                                    "type":"Dictionary<String,Boolean>",
+                                    "values":null,
+                                    "default":null,
+                                    "actions": ["Remove", "Add", "Info"],
+                                    "subMetadata":null
+                                } 
+                            ]
+                        },  
+                        {
+                            "name":"OptionColumn",
+                            "description":"Option column configurations",
+                            "type":"Object",
+                            "values":null,
+                            "default":null,
+                            "actions": ["Remove", "Add", "Info"],
+                            "subMetadata":[
+                                {
+                                    "name":"BenefitCodesToRemoveFromTotal",
+                                    "description":"BenefitCodesToRemoveFromTotal Description",
+                                    "type":"List<String>",
+                                    "values":null,
+                                    "default":null,
+                                    "actions": ["Remove", "Add", "Info"],
+                                    "subMetadata":null
+                                },
+                                {
+                                    "name":"HideTotal",
+                                    "description":"HideTotal Description",
+                                    "type":"Boolean",
+                                    "values":null,
+                                    "default":null,
+                                    "actions": ["Remove", "Info"],
+                                    "subMetadata":null
+                                },                                {
+                                    "name":"HideTotalText",
+                                    "description":"HideTotalText Description",
+                                    "type":"LocalizedDictionary<String,String>",
+                                    "values":null,
+                                    "default":null,
+                                    "actions": ["Remove", "Add", "Info"],
+                                    "subMetadata":null
+                                },{
+                                    "name":"ShowCost",
+                                    "description":"ShowCost Description",
+                                    "type":"Boolean",
+                                    "values":null,
+                                    "default":null,
+                                    "actions": ["Remove", "Info"],
+                                    "subMetadata":null
+                                },
+                                {
+                                    "name":"TitleResourceKey",
+                                    "description":"TitleResourceKey Description",
+                                    "type":"String",
+                                    "values":null,
+                                    "default":null,
+                                    "actions": ["Remove", "Info"],
+                                    "subMetadata":null
+                                },
+                                {
+                                    "name":"Hiding",
+                                    "description":"An object that controls hiding elements",
+                                    "type":"Object",
+                                    "values":null,
+                                    "default":null,
+                                    "actions": ["Remove", "Add", "Info"],
+                                    "subMetadata":[
+                                        {
+                                            "name":"BenefitCodesToHide",
+                                            "description":"BenefitCodesToHide Description",
+                                            "type":"List<String>",
+                                            "values":null,
+                                            "default":null,
+                                            "actions": ["Remove", "Add", "Info"],
+                                            "subMetadata":null
+                                        },
+                                        {
+                                            "name":"BenefitOptionCodesToHide",
+                                            "description":"BenefitOptionCodesToHide Description",
+                                            "type":"List<List<String>>",
+                                            "values":null,
+                                            "default":null,
+                                            "actions": ["Remove", "Add", "Info"],
+                                            "subMetadata":null
+                                        },  
+                                        {
+                                            "name":"BenefitCategoryCodesToHide",
+                                            "description":"BenefitCategoryCodesToHide Description",
+                                            "type":"List<List<String>>",
+                                            "values":null,
+                                            "default":null,
+                                            "actions": ["Remove", "Add", "Info"],
+                                            "subMetadata":null
+                                        },
+                                        {
+                                            "name":"BenefitOptionCategoryCodesToHide",
+                                            "description":"BenefitOptionCategoryCodesToHide Description",
+                                            "type":"List<List<String>>",
+                                            "values":null,
+                                            "default":null,
+                                            "actions": ["Remove", "Add", "Info"],
+                                            "subMetadata":null
+                                        },
+                                        {
+                                            "name":"BenefitCodesToHideForOptionTab",
+                                            "description":"BenefitCodesToHideForOptionTab Description",
+                                            "type":"Dictionary<String,Boolean>",
+                                            "values":null,
+                                            "default":null,
+                                            "actions": ["Remove", "Add", "Info"],
+                                            "subMetadata":null
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name":"CostValue",
+                                    "description":"CostValue Description",
+                                    "type":"Dictionary<String,EnumMulti>",
+                                    "values":"Value=Core,Er,Ee,Cost,PriceTag,OutOfPocketLo,OutOfPocketHi,ProvincialTaxable,FederalTaxable,MaxVolume,MinVolume,VolumeIncrement,BenefitSelectedVolume,BenefitOriginalVolume,BenefitEstimatedUsageValueLo,BenefitEstimatedUsageValueHi,DeductCore,DeductEr,DeductEe,DeductCost,DeductPriceTag,DeductOutOfPocketLo,DeductOutOfPocketHi,DeductProvincialTaxable,DeductFederalTaxable,DeductMaxVolume,DeductMinVolume,DeductVolumeIncrement,DeductBenefitSelectedVolume,DeductBenefitOriginalVolume,DeductBenefitEstimatedUsageValueLo,DeductBenefitEstimatedUsageValueHi",
+                                    "default":null,
+                                    "actions": ["Remove", "Add", "Info"],
+                                    "subMetadata":null
+                                },
+                                {
+                                    "name":"CostValuePeriod",
+                                    "description":"CostValuePeriod Description",
+                                    "type":"Enum",
+                                    "values":"Annual,PerPay,Monthly,SemiMonthly,BiWeekly,Weekly",
+                                    "default":null,
+                                    "actions": ["Remove", "Info"],
+                                    "subMetadata":null
+                                },
+                                {
+                                    "name":"TextWhenHiding",
+                                    "description":"TextWhenHiding Description",
+                                    "type":"LocalizedDictionary<string,string>",
+                                    "values":null,
+                                    "default":null,
+                                    "actions": ["Remove", "Add", "Info"],
+                                    "subMetadata":null
+                                },
+                                {
+                                    "name":"TextWhenNothingOrZero",
+                                    "description":"TextWhenNothingOrZero Description",
+                                    "type":"LocalizedDictionary<string,string>",
+                                    "values":null,
+                                    "default":null,
+                                    "actions": ["Remove", "Add", "Info"],
+                                    "subMetadata":null
+                                }
+                            ]
+                        },
+                        {
+                            "name":"CategoryColumn",
+                            "description":"Option column configurations",
+                            "type":"Object",
+                            "values":null,
+                            "default":null,
+                            "actions": ["Remove", "Add", "Info"],
+                            "subMetadata":[
+                                {
+                                    "name":"BenefitCodesToRemoveFromTotal",
+                                    "description":"BenefitCodesToRemoveFromTotal Description",
+                                    "type":"List<String>",
+                                    "values":null,
+                                    "default":null,
+                                    "actions": ["Remove", "Add", "Info"],
+                                    "subMetadata":null
+                                },
+                                {
+                                    "name":"HideTotal",
+                                    "description":"HideTotal Description",
+                                    "type":"Boolean",
+                                    "values":null,
+                                    "default":null,
+                                    "actions": ["Remove", "Info"],
+                                    "subMetadata":null
+                                },                                {
+                                    "name":"HideTotalText",
+                                    "description":"HideTotalText Description",
+                                    "type":"LocalizedDictionary<String,String>",
+                                    "values":null,
+                                    "default":null,
+                                    "actions": ["Remove", "Add", "Info"],
+                                    "subMetadata":null
+                                },{
+                                    "name":"ShowCost",
+                                    "description":"ShowCost Description",
+                                    "type":"Boolean",
+                                    "values":null,
+                                    "default":null,
+                                    "actions": ["Remove", "Info"],
+                                    "subMetadata":null
+                                },
+                                {
+                                    "name":"TitleResourceKey",
+                                    "description":"TitleResourceKey Description",
+                                    "type":"String",
+                                    "values":null,
+                                    "default":null,
+                                    "actions": ["Remove", "Info"],
+                                    "subMetadata":null
+                                },
+                                {
+                                    "name":"Hiding",
+                                    "description":"An object that controls hiding elements",
+                                    "type":"Object",
+                                    "values":null,
+                                    "default":null,
+                                    "actions": ["Remove", "Add", "Info"],
+                                    "subMetadata":[
+                                        {
+                                            "name":"BenefitCodesToHide",
+                                            "description":"BenefitCodesToHide Description",
+                                            "type":"List<String>",
+                                            "values":null,
+                                            "default":null,
+                                            "actions": ["Remove", "Add", "Info"],
+                                            "subMetadata":null
+                                        },
+                                        {
+                                            "name":"BenefitOptionCodesToHide",
+                                            "description":"BenefitOptionCodesToHide Description",
+                                            "type":"List<List<String>>",
+                                            "values":null,
+                                            "default":null,
+                                            "actions": ["Remove", "Add", "Info"],
+                                            "subMetadata":null
+                                        },  
+                                        {
+                                            "name":"BenefitCategoryCodesToHide",
+                                            "description":"BenefitCategoryCodesToHide Description",
+                                            "type":"List<List<String>>",
+                                            "values":null,
+                                            "default":null,
+                                            "actions": ["Remove", "Add", "Info"],
+                                            "subMetadata":null
+                                        },
+                                        {
+                                            "name":"BenefitOptionCategoryCodesToHide",
+                                            "description":"BenefitOptionCategoryCodesToHide Description",
+                                            "type":"List<List<String>>",
+                                            "values":null,
+                                            "default":null,
+                                            "actions": ["Remove", "Add", "Info"],
+                                            "subMetadata":null
+                                        },
+                                        {
+                                            "name":"BenefitCodesToHideForOptionTab",
+                                            "description":"BenefitCodesToHideForOptionTab Description",
+                                            "type":"Dictionary<String,Boolean>",
+                                            "values":null,
+                                            "default":null,
+                                            "actions": ["Remove", "Add", "Info"],
+                                            "subMetadata":null
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name":"CostValue",
+                                    "description":"CostValue Description",
+                                    "type":"Dictionary<String,EnumMulti>",
+                                    "values":"Value=Core,Er,Ee,Cost,PriceTag,OutOfPocketLo,OutOfPocketHi,ProvincialTaxable,FederalTaxable,MaxVolume,MinVolume,VolumeIncrement,BenefitSelectedVolume,BenefitOriginalVolume,BenefitEstimatedUsageValueLo,BenefitEstimatedUsageValueHi,DeductCore,DeductEr,DeductEe,DeductCost,DeductPriceTag,DeductOutOfPocketLo,DeductOutOfPocketHi,DeductProvincialTaxable,DeductFederalTaxable,DeductMaxVolume,DeductMinVolume,DeductVolumeIncrement,DeductBenefitSelectedVolume,DeductBenefitOriginalVolume,DeductBenefitEstimatedUsageValueLo,DeductBenefitEstimatedUsageValueHi",
+                                    "default":null,
+                                    "actions": ["Remove", "Add", "Info"],
+                                    "subMetadata":null
+                                },
+                                {
+                                    "name":"CostValuePeriod",
+                                    "description":"CostValuePeriod Description",
+                                    "type":"Enum",
+                                    "values":"Annual,PerPay,Monthly,SemiMonthly,BiWeekly,Weekly",
+                                    "default":null,
+                                    "actions": ["Remove", "Info"],
+                                    "subMetadata":null
+                                },
+                                {
+                                    "name":"TextWhenHiding",
+                                    "description":"TextWhenHiding Description",
+                                    "type":"LocalizedDictionary<string,string>",
+                                    "values":null,
+                                    "default":null,
+                                    "actions": ["Remove", "Add", "Info"],
+                                    "subMetadata":null
+                                },
+                                {
+                                    "name":"TextWhenNothingOrZero",
+                                    "description":"TextWhenNothingOrZero Description",
+                                    "type":"LocalizedDictionary<string,string>",
+                                    "values":null,
+                                    "default":null,
+                                    "actions": ["Remove", "Add", "Info"],
+                                    "subMetadata":null
+                                }
+                            ]
+                        },
+                        {
+                            "name":"CostColumn",
+                            "description":"Option column configurations",
+                            "type":"Dictionary<Integer,Object>",
+                            "values":null,
+                            "default":null,
+                            "actions": ["Remove", "Add", "Info"],
+                            "subMetadata":[
+                                {
+                                    "name":"BenefitCodesToRemoveFromTotal",
+                                    "description":"BenefitCodesToRemoveFromTotal Description",
+                                    "type":"List<String>",
+                                    "values":null,
+                                    "default":null,
+                                    "actions": ["Remove", "Add", "Info"],
+                                    "subMetadata":null
+                                },
+                                {
+                                    "name":"HideTotal",
+                                    "description":"HideTotal Description",
+                                    "type":"Boolean",
+                                    "values":null,
+                                    "default":null,
+                                    "actions": ["Remove", "Info"],
+                                    "subMetadata":null
+                                },                                {
+                                    "name":"HideTotalText",
+                                    "description":"HideTotalText Description",
+                                    "type":"LocalizedDictionary<String,String>",
+                                    "values":null,
+                                    "default":null,
+                                    "actions": ["Remove", "Add", "Info"],
+                                    "subMetadata":null
+                                },{
+                                    "name":"ShowCost",
+                                    "description":"ShowCost Description",
+                                    "type":"Boolean",
+                                    "values":null,
+                                    "default":null,
+                                    "actions": ["Remove", "Info"],
+                                    "subMetadata":null
+                                },
+                                {
+                                    "name":"TitleResourceKey",
+                                    "description":"TitleResourceKey Description",
+                                    "type":"String",
+                                    "values":null,
+                                    "default":null,
+                                    "actions": ["Remove", "Info"],
+                                    "subMetadata":null
+                                },
+                                {
+                                    "name":"Hiding",
+                                    "description":"An object that controls hiding elements",
+                                    "type":"Object",
+                                    "values":null,
+                                    "default":null,
+                                    "actions": ["Remove", "Add", "Info"],
+                                    "subMetadata":[
+                                        {
+                                            "name":"BenefitCodesToHide",
+                                            "description":"BenefitCodesToHide Description",
+                                            "type":"List<String>",
+                                            "values":null,
+                                            "default":null,
+                                            "actions": ["Remove", "Add", "Info"],
+                                            "subMetadata":null
+                                        },
+                                        {
+                                            "name":"BenefitOptionCodesToHide",
+                                            "description":"BenefitOptionCodesToHide Description",
+                                            "type":"List<List<String>>",
+                                            "values":null,
+                                            "default":null,
+                                            "actions": ["Remove", "Add", "Info"],
+                                            "subMetadata":null
+                                        },  
+                                        {
+                                            "name":"BenefitCategoryCodesToHide",
+                                            "description":"BenefitCategoryCodesToHide Description",
+                                            "type":"List<List<String>>",
+                                            "values":null,
+                                            "default":null,
+                                            "actions": ["Remove", "Add", "Info"],
+                                            "subMetadata":null
+                                        },
+                                        {
+                                            "name":"BenefitOptionCategoryCodesToHide",
+                                            "description":"BenefitOptionCategoryCodesToHide Description",
+                                            "type":"List<List<String>>",
+                                            "values":null,
+                                            "default":null,
+                                            "actions": ["Remove", "Add", "Info"],
+                                            "subMetadata":null
+                                        },
+                                        {
+                                            "name":"BenefitCodesToHideForOptionTab",
+                                            "description":"BenefitCodesToHideForOptionTab Description",
+                                            "type":"Dictionary<String,Boolean>",
+                                            "values":null,
+                                            "default":null,
+                                            "actions": ["Remove", "Add", "Info"],
+                                            "subMetadata":null
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name":"CostValue",
+                                    "description":"CostValue Description",
+                                    "type":"Dictionary<String,EnumMulti>",
+                                    "values":"Value=Core,Er,Ee,Cost,PriceTag,OutOfPocketLo,OutOfPocketHi,ProvincialTaxable,FederalTaxable,MaxVolume,MinVolume,VolumeIncrement,BenefitSelectedVolume,BenefitOriginalVolume,BenefitEstimatedUsageValueLo,BenefitEstimatedUsageValueHi,DeductCore,DeductEr,DeductEe,DeductCost,DeductPriceTag,DeductOutOfPocketLo,DeductOutOfPocketHi,DeductProvincialTaxable,DeductFederalTaxable,DeductMaxVolume,DeductMinVolume,DeductVolumeIncrement,DeductBenefitSelectedVolume,DeductBenefitOriginalVolume,DeductBenefitEstimatedUsageValueLo,DeductBenefitEstimatedUsageValueHi",
+                                    "default":null,
+                                    "actions": ["Remove", "Add", "Info"],
+                                    "subMetadata":null
+                                },
+                                {
+                                    "name":"CostValuePeriod",
+                                    "description":"CostValuePeriod Description",
+                                    "type":"Enum",
+                                    "values":"Annual,PerPay,Monthly,SemiMonthly,BiWeekly,Weekly",
+                                    "default":null,
+                                    "actions": ["Remove", "Info"],
+                                    "subMetadata":null
+                                },
+                                {
+                                    "name":"TextWhenHiding",
+                                    "description":"TextWhenHiding Description",
+                                    "type":"LocalizedDictionary<string,string>",
+                                    "values":null,
+                                    "default":null,
+                                    "actions": ["Remove", "Add", "Info"],
+                                    "subMetadata":null
+                                },
+                                {
+                                    "name":"TextWhenNothingOrZero",
+                                    "description":"TextWhenNothingOrZero Description",
+                                    "type":"LocalizedDictionary<string,string>",
+                                    "values":null,
+                                    "default":null,
+                                    "actions": ["Remove", "Add", "Info"],
+                                    "subMetadata":null
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name":"Beneficiaries",
+                    "description":"Beneficiaries Description",
+                    "type":"LocalizedDictionary<EnumMulti,Object>",
+                    "values":"Key=Family,Choices,Beneficiaries,Fiinalize,Confirmation,TodaysCoverage,TodaysCoveragePrint,EventDetails",
+                    "default":null,
+                    "actions": ["Remove", "Add", "Info"],
+                    "subMetadata":[
+                        {
+                            "name":"HideAll",
+                            "description":"HideAll Description",
+                            "type":"Boolean",
+                            "values":null,
+                            "default":null,
+                            "actions": ["Remove", "Info"],
+                            "subMetadata":null
+                        },
+                        {
+                            "name":"HideContingentSection",
+                            "description":"HideContingentSection Description",
+                            "type":"Boolean",
+                            "values":null,
+                            "default":null,
+                            "actions": ["Remove", "Info"],
+                            "subMetadata":null
+                        }
+                    ]
+                },
+                {
+                    "name":"MyPlanCovers",
+                    "description":"MyPlanCovers Description",
+                    "type":"Object",
+                    "values":null,
+                    "default":null,
+                    "actions": ["Remove", "Add", "Info"],
+                    "subMetadata":[
+                        {
+                            "name":"DetailPageHideSaveButton",
+                            "description":"DetailPageHideSaveButton Description",
+                            "type":"Boolean",
+                            "values":null,
+                            "default":null,
+                            "actions": ["Remove", "Info"],
+                            "subMetadata":null
+                        },
+                        {
+                            "name":"DetailPageReadOnly",
+                            "description":"DetailPageReadOnly Description",
+                            "type":"Boolean",
+                            "values":null,
+                            "default":null,
+                            "actions": ["Remove", "Info"],
+                            "subMetadata":null
+                        },
+                        {
+                            "name":"DetailPageHideSelectAllNoneLink",
+                            "description":"DetailPageHideSelectAllNoneLink Description",
+                            "type":"Boolean",
+                            "values":null,
+                            "default":null,
+                            "actions": ["Remove", "Info"],
+                            "subMetadata":null
+                        },
+                        {
+                            "name":"ChoicesHideNoOneCoveredLabelHorizontalBox",
+                            "description":"ChoicesHideNoOneCoveredLabelHorizontalBox Description",
+                            "type":"Boolean",
+                            "values":null,
+                            "default":null,
+                            "actions": ["Remove", "Info"],
+                            "subMetadata":null
+                        },
+                        {
+                            "name":"ChoicesHideNoOneCoveredLabelDropDown",
+                            "description":"ChoicesHideNoOneCoveredLabelDropDown Description",
+                            "type":"Boolean",
+                            "values":null,
+                            "default":null,
+                            "actions": ["Remove", "Info"],
+                            "subMetadata":null
+                        }
+                    ]
+                },
+                {
+                    "name":"FinalizeEsignature",
+                    "description":"FinalizeEsignature Description",
+                    "type":"Object",
+                    "values":null,
+                    "default":null,
+                    "actions": ["Remove", "Add", "Info"],
+                    "subMetadata":[
+                        {
+                            "name":"IsEventBased",
+                            "description":"IsEventBased Description",
+                            "type":"Boolean",
+                            "values":null,
+                            "default":null,
+                            "actions": ["Remove", "Info"],
+                            "subMetadata":null
+                        },
+                        {
+                            "name":"IsDivisionBased",
+                            "description":"IsDivisionBased Description",
+                            "type":"Boolean",
+                            "values":null,
+                            "default":null,
+                            "actions": ["Remove", "Info"],
+                            "subMetadata":null
+                        },
+                        {
+                            "name":"HideEventStatusOnFinalizeStep",
+                            "description":"HideEventStatusOnFinalizeStep Description",
+                            "type":"Boolean",
+                            "values":null,
+                            "default":null,
+                            "actions": ["Remove", "Info"],
+                            "subMetadata":null
+                        }
+                    ]
+                },
+                {
+                    "name":"MemberProfileFields",
+                    "description":"MemberProfileFields Description",
+                    "type":"Dictionary<EnumMulti,List<String>>",
+                    "values":"Key=Family,Choices,Beneficiaries,Fiinalize,Confirmation,TodaysCoverage,TodaysCoveragePrint,EventDetails",
+                    "default":null,
+                    "actions": ["Remove", "Add", "Info"],
+                    "subMetadata":null
+                },
+                {
+                    "name":"ESignatureDialogFields",
+                    "description":"ESignatureDialogFields Description",
+                    "type":"List<String>",
+                    "values":null,
+                    "default":null,
+                    "actions": ["Remove", "Add", "Info"],
+                    "subMetadata":null
+                },
+                {
+                    "name":"BrokenRuleMessageMappings",
+                    "description":"BrokenRuleMessageMappings Description",
+                    "type":"Object",
+                    "values":null,
+                    "default":null,
+                    "actions": ["Remove", "Add", "Info"],
+                    "subMetadata":[
+                        {
+                            "name":"TokenReplaceCollection",
+                            "description":"TokenReplaceCollection Description",
+                            "type":"List<Object>",
+                            "values":null,
+                            "default":null,
+                            "actions": ["Remove", "Add", "Info"],
+                            "subMetadata":[
+                                {
+                                    "name":"Type",
+                                    "description":"Type Description",
+                                    "type":"String",
+                                    "values":null,
+                                    "default":null,
+                                    "actions": ["Remove", "Info"],
+                                    "subMetadata":null
+                                },    
+                                {
+                                    "name":"WarningCode",
+                                    "description":"WarningCode Description",
+                                    "type":"String",
+                                    "values":null,
+                                    "default":null,
+                                    "actions": ["Remove", "Info"],
+                                    "subMetadata":null
+                                }, 
+                                {
+                                    "name":"PropertiesToFormat",
+                                    "description":"PropertiesToFormat Description",
+                                    "type":"List<String>",
+                                    "values":null,
+                                    "default":null,
+                                    "actions": ["Remove", "Add", "Info"],
+                                    "subMetadata":null
+                                }   
+                            ]
+                        },
+                        {
+                            "name":"IgnoredWarningCodes",
+                            "description":"IgnoredWarningCodes Description",
+                            "type":"List<String>",
+                            "values":null,
+                            "default":null,
+                            "actions": ["Remove", "Add", "Info"],
+                            "subMetadata": null
+                        },
+                        {
+                            "name":"SimilarMessagesWarningCodesToRemove",
+                            "description":"SimilarMessagesWarningCodesToRemove Description",
+                            "type":"List<String>",
+                            "values":null,
+                            "default":null,
+                            "actions": ["Remove", "Add", "Info"],
+                            "subMetadata": null
+                        }
+                    ]
+                },
+                {
+                    "name":"CostSummary",
+                    "description":"CostSummary Description",
+                    "type":"Dictionary<EnumMulti,Object>",
+                    "values":"Key=Family,Choices,Beneficiaries,Fiinalize,Confirmation,TodaysCoverage,TodaysCoveragePrint,EventDetails",
+                    "default":null,
+                    "actions": ["Remove", "Add", "Info"],
+                    "subMetadata":null
+                },
+                {
+                    "name":"BenefitWidget",
+                    "description":"BenefitWidget Description",
+                    "type":"Dictionary<Integer,Object>",
+                    "values":null,
+                    "default":null,
+                    "actions": ["Remove", "Add", "Info"],
+                    "subMetadata":[
+                        {
+                            "name":"Costs",
+                            "description":"Costs Description",
+                            "type":"Object",
+                            "values":null,
+                            "default":null,
+                            "actions": ["Remove", "Add", "Info"],
+                            "subMetadata":[
+                                {
+                                    "name":"Condition",
+                                    "description":"Condition Description",
+                                    "type":"String",
+                                    "values":null,
+                                    "default":null,
+                                    "actions": ["Remove", "Info"],
+                                    "subMetadata":null
+                                },
+                                {
+                                    "name":"AnnualBenefitValue",
+                                    "description":"AnnualBenefitValue Description",
+                                    "type":"String",
+                                    "values":null,
+                                    "default":null,
+                                    "actions": ["Remove", "Info"],
+                                    "subMetadata":null
+                                },
+                                {
+                                    "name":"AnnualTaxable",
+                                    "description":"AnnualTaxable Description",
+                                    "type":"String",
+                                    "values":null,
+                                    "default":null,
+                                    "actions": ["Remove", "Info"],
+                                    "subMetadata":null
+                                },
+                                {
+                                    "name":"BiweeklyPayableDeduction",
+                                    "description":"BiweeklyPayableDeduction Description",
+                                    "type":"String",
+                                    "values":null,
+                                    "default":null,
+                                    "actions": ["Remove", "Info"],
+                                    "subMetadata":null
+                                },
+                                {
+                                    "name":"SummaryValue1",
+                                    "description":"SummaryValue1 Description",
+                                    "type":"String",
+                                    "values":null,
+                                    "default":null,
+                                    "actions": ["Remove", "Info"],
+                                    "subMetadata":null
+                                },
+                                {
+                                    "name":"SummaryValue2",
+                                    "description":"SummaryValue2 Description",
+                                    "type":"String",
+                                    "values":null,
+                                    "default":null,
+                                    "actions": ["Remove", "Info"],
+                                    "subMetadata":null
+                                },
+                                {
+                                    "name":"SummaryValue3",
+                                    "description":"SummaryValue3 Description",
+                                    "type":"String",
+                                    "values":null,
+                                    "default":null,
+                                    "actions": ["Remove", "Info"],
+                                    "subMetadata":null
+                                },
+                                {
+                                    "name":"CashValue",
+                                    "description":"CashValue Description",
+                                    "type":"String",
+                                    "values":null,
+                                    "default":null,
+                                    "actions": ["Remove", "Info"],
+                                    "subMetadata":null
+                                },
+                                {
+                                    "name":"HideNumbers",
+                                    "description":"HideNumbers Description",
+                                    "type":"String",
+                                    "values":null,
+                                    "default":null,
+                                    "actions": ["Remove", "Info"],
+                                    "subMetadata":null
+                                },
+                                {
+                                    "name":"MonthlyEmployeeCost",
+                                    "description":"MonthlyEmployeeCost Description",
+                                    "type":"String",
+                                    "values":null,
+                                    "default":null,
+                                    "actions": ["Remove", "Info"],
+                                    "subMetadata":null
+                                },
+                                {
+                                    "name":"MonthlyEmployerCost",
+                                    "description":"MonthlyEmployerCost Description",
+                                    "type":"String",
+                                    "values":null,
+                                    "default":null,
+                                    "actions": ["Remove", "Info"],
+                                    "subMetadata":null
+                                },
+                                {
+                                    "name":"MonthlyCoreCost",
+                                    "description":"MonthlyCoreCost Description",
+                                    "type":"String",
+                                    "values":null,
+                                    "default":null,
+                                    "actions": ["Remove", "Info"],
+                                    "subMetadata":null
+                                }
+                            ]
+                        },
+                        {
+                            "name":"Coverages",
+                            "description":"Coverages Description",
+                            "type":"Object",
+                            "values":null,
+                            "default":null,
+                            "actions": ["Remove", "Add", "Info"],
+                            "subMetadata":[
+                                {
+                                    "name":"Condition",
+                                    "description":"Condition Description",
+                                    "type":"String",
+                                    "values":null,
+                                    "default":null,
+                                    "actions": ["Remove", "Info"],
+                                    "subMetadata":null
+                                },
+                                {
+                                    "name":"CoveragesHiding",
+                                    "description":"CoveragesHiding Description",
+                                    "type":"Object",
+                                    "values":null,
+                                    "default":null,
+                                    "actions": ["Remove", "Add", "Info"],
+                                    "subMetadata":[
+                                        {
+                                            "name":"BenefitCodesToHide",
+                                            "description":"BenefitCodesToHide Description",
+                                            "type":"List<String>",
+                                            "values":null,
+                                            "default":null,
+                                            "actions": ["Remove", "Add", "Info"],
+                                            "subMetadata":null
+                                        },
+                                        {
+                                            "name":"BenefitOptionCodesToHide",
+                                            "description":"BenefitOptionCodesToHide Description",
+                                            "type":"List<List<String>>",
+                                            "values":null,
+                                            "default":null,
+                                            "actions": ["Remove", "Add", "Info"],
+                                            "subMetadata":null
+                                        },  
+                                        {
+                                            "name":"BenefitCategoryCodesToHide",
+                                            "description":"BenefitCategoryCodesToHide Description",
+                                            "type":"List<List<String>>",
+                                            "values":null,
+                                            "default":null,
+                                            "actions": ["Remove", "Add", "Info"],
+                                            "subMetadata":null
+                                        },
+                                        {
+                                            "name":"BenefitOptionCategoryCodesToHide",
+                                            "description":"BenefitOptionCategoryCodesToHide Description",
+                                            "type":"List<List<String>>",
+                                            "values":null,
+                                            "default":null,
+                                            "actions": ["Remove", "Add", "Info"],
+                                            "subMetadata":null
+                                        },
+                                        {
+                                            "name":"BenefitCodesToHideForOptionTab",
+                                            "description":"BenefitCodesToHideForOptionTab Description",
+                                            "type":"Dictionary<String,Boolean>",
+                                            "values":null,
+                                            "default":null,
+                                            "actions": ["Remove", "Add", "Info"],
+                                            "subMetadata":null
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name":"CoveragesCount",
+                                    "description":"CoveragesCount Description",
+                                    "type":"Integer",
+                                    "values":null,
+                                    "default":null,
+                                    "actions": ["Remove", "Info"],
+                                    "subMetadata":null
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name":"SimplifiedEnrollmentTool",
+                    "description":"SimplifiedEnrollmentTool Description",
+                    "type":"Object",
+                    "values":null,
+                    "default":null,
+                    "actions": ["Remove", "Info"],
+                    "subMetadata":[
+                        {
+                            "name":"OptionColumn",
+                            "description":"Option column configurations",
+                            "type":"Object",
+                            "values":null,
+                            "default":null,
+                            "actions": ["Remove", "Add", "Info"],
+                            "subMetadata":[
+                                {
+                                    "name":"BenefitCodesToRemoveFromTotal",
+                                    "description":"BenefitCodesToRemoveFromTotal Description",
+                                    "type":"List<String>",
+                                    "values":null,
+                                    "default":null,
+                                    "actions": ["Remove", "Add", "Info"],
+                                    "subMetadata":null
+                                },
+                                {
+                                    "name":"HideTotal",
+                                    "description":"HideTotal Description",
+                                    "type":"Boolean",
+                                    "values":null,
+                                    "default":null,
+                                    "actions": ["Remove", "Info"],
+                                    "subMetadata":null
+                                },                                {
+                                    "name":"HideTotalText",
+                                    "description":"HideTotalText Description",
+                                    "type":"LocalizedDictionary<String,String>",
+                                    "values":null,
+                                    "default":null,
+                                    "actions": ["Remove", "Add", "Info"],
+                                    "subMetadata":null
+                                },{
+                                    "name":"ShowCost",
+                                    "description":"ShowCost Description",
+                                    "type":"Boolean",
+                                    "values":null,
+                                    "default":null,
+                                    "actions": ["Remove", "Info"],
+                                    "subMetadata":null
+                                },
+                                {
+                                    "name":"TitleResourceKey",
+                                    "description":"TitleResourceKey Description",
+                                    "type":"String",
+                                    "values":null,
+                                    "default":null,
+                                    "actions": ["Remove", "Info"],
+                                    "subMetadata":null
+                                },
+                                {
+                                    "name":"Hiding",
+                                    "description":"An object that controls hiding elements",
+                                    "type":"Object",
+                                    "values":null,
+                                    "default":null,
+                                    "actions": ["Remove", "Add", "Info"],
+                                    "subMetadata":[
+                                        {
+                                            "name":"BenefitCodesToHide",
+                                            "description":"BenefitCodesToHide Description",
+                                            "type":"List<String>",
+                                            "values":null,
+                                            "default":null,
+                                            "actions": ["Remove", "Add", "Info"],
+                                            "subMetadata":null
+                                        },
+                                        {
+                                            "name":"BenefitOptionCodesToHide",
+                                            "description":"BenefitOptionCodesToHide Description",
+                                            "type":"List<List<String>>",
+                                            "values":null,
+                                            "default":null,
+                                            "actions": ["Remove", "Add", "Info"],
+                                            "subMetadata":null
+                                        },  
+                                        {
+                                            "name":"BenefitCategoryCodesToHide",
+                                            "description":"BenefitCategoryCodesToHide Description",
+                                            "type":"List<List<String>>",
+                                            "values":null,
+                                            "default":null,
+                                            "actions": ["Remove", "Add", "Info"],
+                                            "subMetadata":null
+                                        },
+                                        {
+                                            "name":"BenefitOptionCategoryCodesToHide",
+                                            "description":"BenefitOptionCategoryCodesToHide Description",
+                                            "type":"List<List<String>>",
+                                            "values":null,
+                                            "default":null,
+                                            "actions": ["Remove", "Add", "Info"],
+                                            "subMetadata":null
+                                        },
+                                        {
+                                            "name":"BenefitCodesToHideForOptionTab",
+                                            "description":"BenefitCodesToHideForOptionTab Description",
+                                            "type":"Dictionary<String,Boolean>",
+                                            "values":null,
+                                            "default":null,
+                                            "actions": ["Remove", "Add", "Info"],
+                                            "subMetadata":null
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name":"CostValue",
+                                    "description":"CostValue Description",
+                                    "type":"Dictionary<String,EnumMulti>",
+                                    "values":"Value=Core,Er,Ee,Cost,PriceTag,OutOfPocketLo,OutOfPocketHi,ProvincialTaxable,FederalTaxable,MaxVolume,MinVolume,VolumeIncrement,BenefitSelectedVolume,BenefitOriginalVolume,BenefitEstimatedUsageValueLo,BenefitEstimatedUsageValueHi,DeductCore,DeductEr,DeductEe,DeductCost,DeductPriceTag,DeductOutOfPocketLo,DeductOutOfPocketHi,DeductProvincialTaxable,DeductFederalTaxable,DeductMaxVolume,DeductMinVolume,DeductVolumeIncrement,DeductBenefitSelectedVolume,DeductBenefitOriginalVolume,DeductBenefitEstimatedUsageValueLo,DeductBenefitEstimatedUsageValueHi",
+                                    "default":null,
+                                    "actions": ["Remove", "Add", "Info"],
+                                    "subMetadata":null
+                                },
+                                {
+                                    "name":"CostValuePeriod",
+                                    "description":"CostValuePeriod Description",
+                                    "type":"Enum",
+                                    "values":"Annual,PerPay,Monthly,SemiMonthly,BiWeekly,Weekly",
+                                    "default":null,
+                                    "actions": ["Remove", "Info"],
+                                    "subMetadata":null
+                                },
+                                {
+                                    "name":"TextWhenHiding",
+                                    "description":"TextWhenHiding Description",
+                                    "type":"LocalizedDictionary<string,string>",
+                                    "values":null,
+                                    "default":null,
+                                    "actions": ["Remove", "Add", "Info"],
+                                    "subMetadata":null
+                                },
+                                {
+                                    "name":"TextWhenNothingOrZero",
+                                    "description":"TextWhenNothingOrZero Description",
+                                    "type":"LocalizedDictionary<string,string>",
+                                    "values":null,
+                                    "default":null,
+                                    "actions": ["Remove", "Add", "Info"],
+                                    "subMetadata":null
+                                }
+                            ]
+                        },
+                        {
+                            "name":"CategoryColumn",
+                            "description":"Option column configurations",
+                            "type":"Object",
+                            "values":null,
+                            "default":null,
+                            "actions": ["Remove", "Add", "Info"],
+                            "subMetadata":[
+                                {
+                                    "name":"BenefitCodesToRemoveFromTotal",
+                                    "description":"BenefitCodesToRemoveFromTotal Description",
+                                    "type":"List<String>",
+                                    "values":null,
+                                    "default":null,
+                                    "actions": ["Remove", "Add", "Info"],
+                                    "subMetadata":null
+                                },
+                                {
+                                    "name":"HideTotal",
+                                    "description":"HideTotal Description",
+                                    "type":"Boolean",
+                                    "values":null,
+                                    "default":null,
+                                    "actions": ["Remove", "Info"],
+                                    "subMetadata":null
+                                },                                {
+                                    "name":"HideTotalText",
+                                    "description":"HideTotalText Description",
+                                    "type":"LocalizedDictionary<String,String>",
+                                    "values":null,
+                                    "default":null,
+                                    "actions": ["Remove", "Add", "Info"],
+                                    "subMetadata":null
+                                },{
+                                    "name":"ShowCost",
+                                    "description":"ShowCost Description",
+                                    "type":"Boolean",
+                                    "values":null,
+                                    "default":null,
+                                    "actions": ["Remove", "Info"],
+                                    "subMetadata":null
+                                },
+                                {
+                                    "name":"TitleResourceKey",
+                                    "description":"TitleResourceKey Description",
+                                    "type":"String",
+                                    "values":null,
+                                    "default":null,
+                                    "actions": ["Remove", "Info"],
+                                    "subMetadata":null
+                                },
+                                {
+                                    "name":"Hiding",
+                                    "description":"An object that controls hiding elements",
+                                    "type":"Object",
+                                    "values":null,
+                                    "default":null,
+                                    "actions": ["Remove", "Add", "Info"],
+                                    "subMetadata":[
+                                        {
+                                            "name":"BenefitCodesToHide",
+                                            "description":"BenefitCodesToHide Description",
+                                            "type":"List<String>",
+                                            "values":null,
+                                            "default":null,
+                                            "actions": ["Remove", "Add", "Info"],
+                                            "subMetadata":null
+                                        },
+                                        {
+                                            "name":"BenefitOptionCodesToHide",
+                                            "description":"BenefitOptionCodesToHide Description",
+                                            "type":"List<List<String>>",
+                                            "values":null,
+                                            "default":null,
+                                            "actions": ["Remove", "Add", "Info"],
+                                            "subMetadata":null
+                                        },  
+                                        {
+                                            "name":"BenefitCategoryCodesToHide",
+                                            "description":"BenefitCategoryCodesToHide Description",
+                                            "type":"List<List<String>>",
+                                            "values":null,
+                                            "default":null,
+                                            "actions": ["Remove", "Add", "Info"],
+                                            "subMetadata":null
+                                        },
+                                        {
+                                            "name":"BenefitOptionCategoryCodesToHide",
+                                            "description":"BenefitOptionCategoryCodesToHide Description",
+                                            "type":"List<List<String>>",
+                                            "values":null,
+                                            "default":null,
+                                            "actions": ["Remove", "Add", "Info"],
+                                            "subMetadata":null
+                                        },
+                                        {
+                                            "name":"BenefitCodesToHideForOptionTab",
+                                            "description":"BenefitCodesToHideForOptionTab Description",
+                                            "type":"Dictionary<String,Boolean>",
+                                            "values":null,
+                                            "default":null,
+                                            "actions": ["Remove", "Add", "Info"],
+                                            "subMetadata":null
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name":"CostValue",
+                                    "description":"CostValue Description",
+                                    "type":"Dictionary<String,EnumMulti>",
+                                    "values":"Value=Core,Er,Ee,Cost,PriceTag,OutOfPocketLo,OutOfPocketHi,ProvincialTaxable,FederalTaxable,MaxVolume,MinVolume,VolumeIncrement,BenefitSelectedVolume,BenefitOriginalVolume,BenefitEstimatedUsageValueLo,BenefitEstimatedUsageValueHi,DeductCore,DeductEr,DeductEe,DeductCost,DeductPriceTag,DeductOutOfPocketLo,DeductOutOfPocketHi,DeductProvincialTaxable,DeductFederalTaxable,DeductMaxVolume,DeductMinVolume,DeductVolumeIncrement,DeductBenefitSelectedVolume,DeductBenefitOriginalVolume,DeductBenefitEstimatedUsageValueLo,DeductBenefitEstimatedUsageValueHi",
+                                    "default":null,
+                                    "actions": ["Remove", "Add", "Info"],
+                                    "subMetadata":null
+                                },
+                                {
+                                    "name":"CostValuePeriod",
+                                    "description":"CostValuePeriod Description",
+                                    "type":"Enum",
+                                    "values":"Annual,PerPay,Monthly,SemiMonthly,BiWeekly,Weekly",
+                                    "default":null,
+                                    "actions": ["Remove", "Info"],
+                                    "subMetadata":null
+                                },
+                                {
+                                    "name":"TextWhenHiding",
+                                    "description":"TextWhenHiding Description",
+                                    "type":"LocalizedDictionary<string,string>",
+                                    "values":null,
+                                    "default":null,
+                                    "actions": ["Remove", "Add", "Info"],
+                                    "subMetadata":null
+                                },
+                                {
+                                    "name":"TextWhenNothingOrZero",
+                                    "description":"TextWhenNothingOrZero Description",
+                                    "type":"LocalizedDictionary<string,string>",
+                                    "values":null,
+                                    "default":null,
+                                    "actions": ["Remove", "Add", "Info"],
+                                    "subMetadata":null
+                                }
+                            ]
+                        },
+                        {
+                            "name":"ChoicesCostColumn",
+                            "description":"Option column configurations",
+                            "type":"Dictionary<Integer,Object>",
+                            "values":null,
+                            "default":null,
+                            "actions": ["Remove", "Add", "Info"],
+                            "subMetadata":[
+                                {
+                                    "name":"BenefitCodesToRemoveFromTotal",
+                                    "description":"BenefitCodesToRemoveFromTotal Description",
+                                    "type":"List<String>",
+                                    "values":null,
+                                    "default":null,
+                                    "actions": ["Remove", "Add", "Info"],
+                                    "subMetadata":null
+                                },
+                                {
+                                    "name":"HideTotal",
+                                    "description":"HideTotal Description",
+                                    "type":"Boolean",
+                                    "values":null,
+                                    "default":null,
+                                    "actions": ["Remove", "Info"],
+                                    "subMetadata":null
+                                },                                {
+                                    "name":"HideTotalText",
+                                    "description":"HideTotalText Description",
+                                    "type":"LocalizedDictionary<String,String>",
+                                    "values":null,
+                                    "default":null,
+                                    "actions": ["Remove", "Add", "Info"],
+                                    "subMetadata":null
+                                },{
+                                    "name":"ShowCost",
+                                    "description":"ShowCost Description",
+                                    "type":"Boolean",
+                                    "values":null,
+                                    "default":null,
+                                    "actions": ["Remove", "Info"],
+                                    "subMetadata":null
+                                },
+                                {
+                                    "name":"TitleResourceKey",
+                                    "description":"TitleResourceKey Description",
+                                    "type":"String",
+                                    "values":null,
+                                    "default":null,
+                                    "actions": ["Remove", "Info"],
+                                    "subMetadata":null
+                                },
+                                {
+                                    "name":"Hiding",
+                                    "description":"An object that controls hiding elements",
+                                    "type":"Object",
+                                    "values":null,
+                                    "default":null,
+                                    "actions": ["Remove", "Add", "Info"],
+                                    "subMetadata":[
+                                        {
+                                            "name":"BenefitCodesToHide",
+                                            "description":"BenefitCodesToHide Description",
+                                            "type":"List<String>",
+                                            "values":null,
+                                            "default":null,
+                                            "actions": ["Remove", "Add", "Info"],
+                                            "subMetadata":null
+                                        },
+                                        {
+                                            "name":"BenefitOptionCodesToHide",
+                                            "description":"BenefitOptionCodesToHide Description",
+                                            "type":"List<List<String>>",
+                                            "values":null,
+                                            "default":null,
+                                            "actions": ["Remove", "Add", "Info"],
+                                            "subMetadata":null
+                                        },  
+                                        {
+                                            "name":"BenefitCategoryCodesToHide",
+                                            "description":"BenefitCategoryCodesToHide Description",
+                                            "type":"List<List<String>>",
+                                            "values":null,
+                                            "default":null,
+                                            "actions": ["Remove", "Add", "Info"],
+                                            "subMetadata":null
+                                        },
+                                        {
+                                            "name":"BenefitOptionCategoryCodesToHide",
+                                            "description":"BenefitOptionCategoryCodesToHide Description",
+                                            "type":"List<List<String>>",
+                                            "values":null,
+                                            "default":null,
+                                            "actions": ["Remove", "Add", "Info"],
+                                            "subMetadata":null
+                                        },
+                                        {
+                                            "name":"BenefitCodesToHideForOptionTab",
+                                            "description":"BenefitCodesToHideForOptionTab Description",
+                                            "type":"Dictionary<String,Boolean>",
+                                            "values":null,
+                                            "default":null,
+                                            "actions": ["Remove", "Add", "Info"],
+                                            "subMetadata":null
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name":"CostValue",
+                                    "description":"CostValue Description",
+                                    "type":"Dictionary<String,EnumMulti>",
+                                    "values":"Value=Core,Er,Ee,Cost,PriceTag,OutOfPocketLo,OutOfPocketHi,ProvincialTaxable,FederalTaxable,MaxVolume,MinVolume,VolumeIncrement,BenefitSelectedVolume,BenefitOriginalVolume,BenefitEstimatedUsageValueLo,BenefitEstimatedUsageValueHi,DeductCore,DeductEr,DeductEe,DeductCost,DeductPriceTag,DeductOutOfPocketLo,DeductOutOfPocketHi,DeductProvincialTaxable,DeductFederalTaxable,DeductMaxVolume,DeductMinVolume,DeductVolumeIncrement,DeductBenefitSelectedVolume,DeductBenefitOriginalVolume,DeductBenefitEstimatedUsageValueLo,DeductBenefitEstimatedUsageValueHi",
+                                    "default":null,
+                                    "actions": ["Remove", "Add", "Info"],
+                                    "subMetadata":null
+                                },
+                                {
+                                    "name":"CostValuePeriod",
+                                    "description":"CostValuePeriod Description",
+                                    "type":"Enum",
+                                    "values":"Annual,PerPay,Monthly,SemiMonthly,BiWeekly,Weekly",
+                                    "default":null,
+                                    "actions": ["Remove", "Info"],
+                                    "subMetadata":null
+                                },
+                                {
+                                    "name":"TextWhenHiding",
+                                    "description":"TextWhenHiding Description",
+                                    "type":"LocalizedDictionary<string,string>",
+                                    "values":null,
+                                    "default":null,
+                                    "actions": ["Remove", "Add", "Info"],
+                                    "subMetadata":null
+                                },
+                                {
+                                    "name":"TextWhenNothingOrZero",
+                                    "description":"TextWhenNothingOrZero Description",
+                                    "type":"LocalizedDictionary<string,string>",
+                                    "values":null,
+                                    "default":null,
+                                    "actions": ["Remove", "Add", "Info"],
+                                    "subMetadata":null
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name":"CtaPanelBeneficiariesBenefits",
+                    "description":"CtaPanelBeneficiariesBenefits Description",
+                    "type":"List<String>",
+                    "values":null,
+                    "default":null,
+                    "actions": ["Remove", "Add", "Info"],
+                    "subMetadata":null
+                },
+                {
+                    "name":"AllowedEventActionsForMember",
+                    "description":"AllowedEventActionsForMember Description",
+                    "type":"EnumMulti",
+                    "values":"ViewDetails,ViewForms,Start,Restart,Resume,Cancel,Reverse",
+                    "default":null,
+                    "actions": ["Remove", "Info"],
+                    "subMetadata":null
+                },
+                {
+                    "name":"AllowedEventActionsForAdmin",
+                    "description":"AllowedEventActionsForAdmin Description",
+                    "type":"EnumMulti",
+                    "values":"ViewDetails,ViewForms,Start,Restart,Resume,Cancel,Reverse",
+                    "default":null,
+                    "actions": ["Remove", "Info"],
+                    "subMetadata":null
+                },
+                {
+                    "name":"ChoicesCostSummaryScrollOffsetTop",
+                    "description":"ChoicesCostSummaryScrollOffsetTop Description",
+                    "type":"Integer",
+                    "values":null,
+                    "default":null,
+                    "actions": ["Remove", "Info"],
+                    "subMetadata":null
+                },
+                {
+                    "name":"HideChangePhotoLink",
+                    "description":"HideChangePhotoLink Description",
+                    "type":"Boolean",
+                    "values":null,
+                    "default":null,
+                    "actions": ["Remove", "Info"],
+                    "subMetadata":null
+                },
+                {
+                    "name":"ExternalOnlineEoiToolLink",
+                    "description":"ExternalOnlineEoiToolLink Description",
+                    "type":"String",
+                    "values":null,
+                    "default":null,
+                    "actions": ["Remove", "Info"],
+                    "subMetadata":null
+                },
+                {
+                    "name":"UseResponsiveEnrollmentTool",
+                    "description":"UseResponsiveEnrollmentTool Description",
+                    "type":"Boolean",
+                    "values":null,
+                    "default":null,
+                    "actions": ["Remove", "Info"],
+                    "subMetadata":null
+                },
+                {
+                    "name":"DisplayExpirationCountdownForPendingEvents",
+                    "description":"DisplayExpirationCountdownForPendingEvents Description",
+                    "type":"Boolean",
+                    "values":null,
+                    "default":null,
+                    "actions": ["Remove", "Info"],
+                    "subMetadata":null
+                },
+                {
+                    "name":"DisplayToggleAllSectionsLink",
+                    "description":"DisplayToggleAllSectionsLink Description",
+                    "type":"Boolean",
+                    "values":null,
+                    "default":null,
+                    "actions": ["Remove", "Info"],
+                    "subMetadata":null
+                },
+                {
+                    "name":"DisplayDstClaimsInfo",
+                    "description":"DisplayDstClaimsInfo Description",
+                    "type":"Boolean",
+                    "values":null,
+                    "default":null,
+                    "actions": ["Remove", "Info"],
+                    "subMetadata":null
+                },
+                {
+                    "name":"HideIrrevocability",
+                    "description":"HideIrrevocability Description",
+                    "type":"Boolean",
+                    "values":null,
+                    "default":null,
+                    "actions": ["Remove", "Info"],
+                    "subMetadata":null
+                },
+                {
+                    "name":"MyElectionTabsHiding",
+                    "description":"MyElectionTabsHiding Description",
+                    "type":"Dictionary<EnumMulti,Object>",
+                    "values":"Key=Family,Choices,Beneficiaries,Fiinalize,Confirmation,TodaysCoverage,TodaysCoveragePrint,EventDetails",
+                    "default":null,
+                    "actions": ["Remove", "Add", "Info"],
+                    "subMetadata":[
+                        {
+                            "name":"HideBeneficiaryTab",
+                            "description":"HideBeneficiaryTab Description",
+                            "type":"Boolean",
+                            "values":null,
+                            "default":null,
+                            "actions": ["Remove", "Info"],
+                            "subMetadata":null
+                        },
+                        {
+                            "name":"HideCoverageTab",
+                            "description":"HideCoverageTab Description",
+                            "type":"Boolean",
+                            "values":null,
+                            "default":null,
+                            "actions": ["Remove", "Info"],
+                            "subMetadata":null
+                        },
+                        {
+                            "name":"HideDependentTab",
+                            "description":"HideDependentTab Description",
+                            "type":"Boolean",
+                            "values":null,
+                            "default":null,
+                            "actions": ["Remove", "Info"],
+                            "subMetadata":null
+                        },
+                        {
+                            "name":"HideEventStatusTab",
+                            "description":"HideEventStatusTab Description",
+                            "type":"Boolean",
+                            "values":null,
+                            "default":null,
+                            "actions": ["Remove", "Info"],
+                            "subMetadata":null
+                        },
+                        {
+                            "name":"HideFormsTab",
+                            "description":"HideFormsTab Description",
+                            "type":"Boolean",
+                            "values":null,
+                            "default":null,
+                            "actions": ["Remove", "Info"],
+                            "subMetadata":null
+                        },
+                        {
+                            "name":"HideMemberTab",
+                            "description":"HideMemberTab Description",
+                            "type":"Boolean",
+                            "values":null,
+                            "default":null,
+                            "actions": ["Remove", "Info"],
+                            "subMetadata":null
+                        }
+                    ]
+                },
+                {
+                    "name":"ShowDetailsOnPlanWidget",
+                    "description":"ShowDetailsOnPlanWidget Description",
+                    "type":"Boolean",
+                    "values":null,
+                    "default":null,
+                    "actions": ["Remove", "Info"],
+                    "subMetadata":null
+                }
+            ]
+        } 
+    ]
+}

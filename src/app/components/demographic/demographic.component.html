@@ -1,0 +1,49 @@
+<h2 mat-dialog-title>Add Demographic</h2>
+
+<p> {{demographicsStr}}</p>
+
+<div id="dyanmicForm">
+  <nz-tree-select
+  style="width: 350px"
+  [nzNodes]="json"
+  nzShowSearch
+  nzPlaceHolder="Please select"
+  [(ngModel)]="value"
+  (ngModelChange)="onChange($event)"
+  [nzCheckStrictly]
+  [nzDisplayWith]="displayNode"
+  >
+  </nz-tree-select>
+
+  <span *ngIf="value" style="margin: 10px;">
+    <select [(ngModel)]="comparisonOp">
+      <option value="=">=</option>
+      <option value="!=">!=</option>
+    </select>
+  </span>
+
+  <div *ngIf="comparisonOp != '--'" class="selectDiv">
+    <input type={{argType}} [(ngModel)]="arguments" class="selectInput">
+    <button class="btn btn-sm btn-secondary" type="button" style="margin-left: 10px;" (click)="addRule()">Add Rule</button>
+  </div> 
+
+  
+</div>
+<br>
+<table class="table">
+    <thead>
+      <tr>
+        <th>Rules</th>
+      </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let row of rules">
+      <td>
+        {{ row }}
+      </td>
+    </tr>
+    </tbody>
+  </table>
+  <br>
+  <button class="btn btn-secondary" (click)="closeDialog()">Cancel</button>
+  <button class="btn btn-primary" (click)="addDemographic()" style="margin-left: 10px;">Add</button>

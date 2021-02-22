@@ -1,0 +1,40 @@
+fieldset.group  { 
+    margin: 0; 
+    padding: 0; 
+    margin-bottom: 1.25em; 
+    padding: .125em; 
+  } 
+
+ul.checkbox  { 
+    margin: 0; 
+    padding: 0; 
+    margin-left: 20px; 
+    list-style: none;
+    -webkit-column-count: auto; /* Chrome, Safari, Opera */
+    -moz-column-count: auto; /* Firefox */
+    column-count: auto;
+  } 
+  
+  ul.checkbox li input { 
+    margin-right: .25em; 
+  } 
+  
+  ul.checkbox li { 
+    border: 1px transparent solid; 
+  } 
+  
+  ul.checkbox li label { 
+    margin-left: auto; 
+  } 
+  ul.checkbox li:hover, 
+  ul.checkbox li.focus  { 
+    background-color: lightyellow; 
+    border: 1px gray solid; 
+    width: 12em; 
+  } 
+
+  ul.checkbox li { 
+    border: 1px transparent solid; 
+    display:inline-block;
+    width:12em;
+  }

@@ -1,0 +1,12 @@
+.selectDiv {
+    display: inline;
+    height: 30px;
+    padding: 0px 11px;
+    border: 1px;
+    margin: 0px;
+}
+
+.selectInput {
+    padding: 1px 2px;
+    height: 28px;
+}

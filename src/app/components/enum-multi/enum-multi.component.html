@@ -1,0 +1,18 @@
+<h2 mat-dialog-title>Add Value List</h2>
+
+<br>
+
+<ul class="form-check" id="optionList">
+    <li *ngFor="let option of enumObj"   >
+        
+        <label class="form-check-label">
+            <input class="form-check-input" type="checkbox" [(ngModel)]="option.checked">
+            {{option.name}}
+        </label>
+    </li>
+</ul>
+
+<br><br>
+
+<button class="btn btn-secondary" (click)="closeDialog()">Cancel</button>
+<button class="btn btn-primary" (click)="addEnumMulti()" style="margin-left: 10px;">Add Values</button>

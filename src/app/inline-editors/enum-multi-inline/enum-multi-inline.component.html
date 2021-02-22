@@ -1,0 +1,9 @@
+<nz-select
+      [nzMaxTagCount]="3"
+      nzMode="multiple"
+      nzPlaceHolder="value"
+      [(ngModel)]="selectedList"
+      (ngModelChange)="modelChange($event)"
+    >
+      <nz-option *ngFor="let item of options" [nzLabel]="item" [nzValue]="item"></nz-option>
+</nz-select>
